@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>010708-3</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        .words {
+            font-size: 40px;
+        }
+        .left {
+            background-color: #ffc20e;
+            height: 100px;
+        }
+        .right {
+            background-color: #6abee9;
+            width: 300px;
+            height: 100px;
+        }
+        .box1-left,
+        .box1-right {
+            float: left;
+        }
+        .box1-left {
+            width: calc(100% - 300px);
+        }
+        /*.box2 {
+            overflow: hidden;
+        }
+        .box2-left {
+            float: left;
+        }*/
+        .box3{
+            position: relative;
+        }
+        .box3-left {
+            margin-right: 300px;
+        }
+        .box3-right {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .box4 {
+            display: flex;
+            align-items: stretch;
+        }
+        .box4-left {
+            flex: 1 1 auto;
+        }
+        .box4-right {
+            flex: 0 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="words">Float+calc() 布局</div>
+    <div>
+        <div class="left box1-left">左栏宽自适应</div>
+        <div class="right box1-right">右栏定宽300px</div>
+    </div>
+<!--
+    <div class="words">Float+overflow 布局</div>
+    <div class="box2">
+        <div class="left box2-left">左栏宽自适应</div>
+        <div class="right ">右栏定宽300px</div>
+    </div>
+-->
+    <div class="words">Position + margin 布局</div>
+    <div class="box3">
+        <div class="left box3-left">左栏宽自适应</div>
+        <div class="right box3-right">右栏定宽300px</div>
+    </div>
+
+    <div class="words">Flex 布局</div>
+    <div class="box4">
+        <div class="left box4-left">左栏宽自适应</div>
+        <div class="right box4-right">右栏定宽300px</div>
+    </div>
+
+</body>
+</html>

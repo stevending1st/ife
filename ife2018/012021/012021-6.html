@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #box{
+        background-image:url("http://ife.baidu.com/2016/static/img/erik_ce204002.jpg");
+        background-repeat: no-repeat;
+        background-position:0px 0px;
+        width:480px;
+        height:480px;
+        margin:0 auto;
+    }
+    #box{
+        background-position-y: 0px;
+    }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+
+    <script>
+        var boxTag = document.getElementById("box");
+        boxTag.style.backgroundPositionY = "0px";
+        var i = 0;
+        function move(){
+            var str = Number(boxTag.style.backgroundPositionY.slice(0,-2));
+            if( i<16 ){
+                str -= 480;
+                boxTag.style.backgroundPositionY = str + "px";
+                i +=1;
+            }else{
+                str = 0;
+                boxTag.style.backgroundPositionY = str + "px";
+                i=0;
+            }
+        }
+        var int = setInterval("move()",200);
+    
+    </script>
+    
+</body>
+</html>

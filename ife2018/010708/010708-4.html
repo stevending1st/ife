@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>010708-4</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        .words {
+            font-size: 40px;
+        }
+        .left,
+        .right {
+            height: 100px;
+            width: 200px;
+            background-color: #ffc20e;
+        }
+        .content {
+            height: 100px;
+            background-color: #6abee9;
+        }
+        .box1-left,
+        .box1-content,
+        .box1-right {
+            float: left;
+        }
+        .box1-content {
+            width: calc(100% - 400px);
+        }
+        .box2 {
+            position: relative;
+        }
+        .box2-left {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .box2-content {
+            margin: 0 200px;
+        }
+        .box2-right {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .box3-left {
+            float: left;
+        }
+        .box3-right {
+            float: right;
+        }
+        .box4 {
+            width: 100%;
+            height: 100px;
+            float: left;
+        }
+        .box4-main {
+            width: 100%;
+            height: 100px;
+            float: left;
+        }
+        .box4-left {
+            float: left;
+            margin-left: -100%;
+        }
+        .box4-right {
+            float: left;
+            margin-left: -200px;
+        }
+        .box5 {
+            display: flex;
+        }
+        .box5-left,
+        .box5-right {
+            flex: 0 0 auto;
+        }
+        .box5-content {
+            flex: 1 1 auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="words">Box1:Float + calc()布局</div>
+    <div>
+        <div class="left box1-left">左侧定宽200px</div>
+        <div class="content box1-content">中间宽度自适应</div>
+        <div class="right box1-right">右侧定宽200px</div>
+    </div>
+
+    <div class="words">Box2:Position布局</div>
+    <div class="box2">
+        <div class="left box2-left">左侧定宽200px</div>
+        <div class="right box2-right">右侧定宽200px</div>
+        <div class="content box2-content">中间宽度自适应</div>
+    </div>
+
+    <div class="words">box3:Float 布局</div>
+    <div>
+        <div class="left box3-left">左侧定宽200px</div>
+        <div class="right box3-right">右侧定宽200px</div>
+        <div class="content box3-content">中间宽度自适应</div>
+    </div>
+
+    <div class="words">box4:双飞翼布局布局</div>
+    <div clas="box4">
+        <div class="box4-main">
+            <div class="content box4-content">中间宽度自适应</div>
+        </div>
+        <div class="left box4-left">左侧定宽200px</div>
+        <div class="right box4-right">右侧定宽200px</div>
+    </div>  
+
+    <div class="words">box5:Flex 布局</div>
+    <div class="box5">
+        <div class="left box5-left">左侧定宽200px</div>
+        <div class="content box5-content">中间宽度自适应</div>
+        <div class="right box5-right">右侧定宽200px</div>
+    </div>
+
+    
+</body>
+</html>

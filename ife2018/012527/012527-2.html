@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="time1"></div>
+    <script>
+    var pTime1 = document.getElementById("time1");
+    function nowDay(){
+        var d =new Date();
+        var weekday = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
+        return weekday[d.getDay()];
+    }
+    function onetotwo(word){
+        if(word<10){
+            return "0" + word.toString();
+        }else {
+            return word.toString();
+        }
+    }
+    function nowTime(){
+        var d =new Date();
+        pTime1.innerHTML =  d.getFullYear() + "年" + onetotwo(d.getMonth()+1) + "月" + onetotwo(d.getDate()) + "日" + nowDay() + " " + onetotwo(d.getHours()) + ":" + onetotwo(d.getMinutes()) + ":" + onetotwo(d.getSeconds()) ;
+    }
+    
+    setInterval("nowTime()",1000);
+    </script>
+</body>
+</html>

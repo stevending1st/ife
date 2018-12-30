@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+}
+h1,
+h2,
+h3,
+p{
+    font-family: "Microsoft YaHei", sans-serif;
+}
+h1 {
+    margin-right: 50px;
+    font-size: 40px;
+    font-weight: 700;
+    margin-left: 40px;
+}
+h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    width: 15%;
+    height: 200px;
+    float: left;
+    background-color: #d6d6d6;
+    border-bottom: 2px solid #fff;
+}
+h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 20px;
+    float: left;
+}
+p {
+    font-size: 25px;
+    margin-left: 20px;
+}
+.to-one-line {
+    float: left;
+}
+.clean-float {
+    clear: left;
+}
+.sidebar {
+    margin-left: 7%;
+    width: 85%;
+    height: 100px;
+    line-height: 100px;
+    background-color: #858585;
+    border-right: 4px solid #858585;
+}
+.main {
+    margin-left: 7%;
+    width: 100%;
+}
+.main-right{
+    width: 70%;
+    height: 200px;
+    float: left;
+    border-bottom: 2px solid #d6d6d6;
+    border-right: 2px solid #d6d6d6;
+}
+.main-left{
+    border-left: 2px solid #d6d6d6;
+    line-height: 200px;
+    margin: auto 0;
+}
+.main-left-bottom{
+    border-bottom: 2px solid #d6d6d6;
+}

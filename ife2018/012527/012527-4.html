@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="Time1"></div>
+    <div id="Time2"></div>
+    <script>
+        var pTime1 = document.getElementById("Time1");
+        var pTime2 = document.getElementById("Time2");
+        function nowDayCN(){
+            var d = new Date();
+            var weekday = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
+            return weekday[d.getDay()];
+        }
+        function nowDayEg(){
+            var d = new Date();
+            var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            return weekday[d.getDay()];
+        }
+        function oneTotwo(word){
+            if(word < 10){
+                return "0" + word.toString();
+            }else{
+                return word.toString();
+            }
+        }
+        function nowTimeCh(){
+            var d =new Date();
+            pTime1.innerHTML =  d.getFullYear() + "年" + oneTotwo(d.getMonth()+1) + "月" + oneTotwo(d.getDate()) + "日" + nowDayCN() + " " + oneTotwo(d.getHours()) + ":" + oneTotwo(d.getMinutes()) + ":" + oneTotwo(d.getSeconds()) ;
+        }
+        function nowTimeEg(){
+            var d = new Date();
+            var AMorPM;
+            var nowTimeHour;
+            if (d.getHours()<13){
+                nowTimeHour = d.getHours();
+                AMorPM = "AM";
+            }else {
+                nowTimeHour = d.getHours() - 12;
+                AMorPM = "PM";
+            }
+            pTime2.innerHTML = d.getFullYear() + "-" + oneTotwo(d.getMonth()+1) + "-" + oneTotwo(d.getDate()) + " " + nowDayEg() + " " + oneTotwo(nowTimeHour) + ":" + oneTotwo(d.getMinutes()) + ":" + oneTotwo(d.getSeconds()) + " " + AMorPM;
+        }
+        setInterval("nowTimeCh();nowTimeEg()",1000);
+    </script>
+</body>
+</html>

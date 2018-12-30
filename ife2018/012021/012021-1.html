@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input id="name" type="text">    
+    <button id="submit-btn">Submit</button>
+    <script>
+        
+        document.getElementById("submit-btn").onclick = function() {
+            var textbox = document.getElementById("name").value;
+            console.log( textbox );
+        }
+        onkeydown = function(){
+            var textbox = document.getElementById("name").value;
+            var onkey = event.key;
+            if(onkey === "Enter"){
+                console.log( textbox );
+            }else if(onkey === "Escape"){
+                document.getElementById("name").value="";
+            }
+        }
+        
+    </script>
+</body>
+</html>

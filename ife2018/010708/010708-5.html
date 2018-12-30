@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>010708-5</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        .words {
+            font-size: 40px;
+        }
+        .left,
+        .content {
+            height: 100px;
+            width: 200px;
+        }
+        .left {
+            background-color: #ffc20e;
+        }
+        .content {
+            background-color: #6abee9;
+        }
+        .right {
+            height: 100px;
+            background-color: #ffc20e;
+        }
+        .box1-left,
+        .box1-content,
+        .box1-right {
+            float: left;
+        }
+        .box1-right {
+            width: calc(100% - 400px);
+        }
+        .box2 {
+            position: relative;
+        }
+        .box2-left {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .box2-content {
+            position: absolute;
+            left: 200px;
+            top: 0;
+        }
+        .box2-right {
+            margin-left: 400px;
+        }
+        .box3-left,
+        .box3-content {
+            float: left;
+        }
+        .box5 {
+            display: flex;
+        }
+        .box5-left,
+        .box5-content {
+            flex: 0 0 auto;
+        }
+        .box5-right {
+            flex: 1 1 auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="words">Box1:Float + calc()布局</div>
+    <div>
+        <div class="left box1-left">左侧定宽200px</div>
+        <div class="content box1-content">中间定宽200px</div>
+        <div class="right box1-right">右侧宽度自适应</div>
+    </div>
+
+    <div class="words">Box2:Position布局</div>
+    <div class="box2">
+        <div class="left box2-left">左侧定宽200px</div>
+        <div class="content box2-content">中间定宽200px</div>
+        <div class="right box2-right">右侧宽度自适应</div>
+    </div>
+
+    <div class="words">box3:Float 布局</div>
+    <div>
+        <div class="left box3-left">左侧定宽200px</div>
+        <div class="content box3-content">中间定宽200px</div>
+        <div class="right box3-right">右侧宽度自适应</div>
+    </div>
+    
+    <div class="words">box5:Flex 布局</div>
+    <div class="box5">
+        <div class="left box5-left">左侧定宽200px</div>
+        <div class="content box5-content">中间定宽200px</div>
+        <div class="right box5-right">右侧宽度自适应</div>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var scoreObject = {
+            "Tony": {
+            "Math": 95,
+            "English": 79,
+            "Music": 68
+            }, 
+            "Simon": {
+            "Math": 100,
+            "English": 95,
+            "Music": 98
+            }, 
+            "Annie": {
+            "Math": 54,
+            "English": 65,
+            "Music": 88
+            }
+        }
+        var scoreArray = new Array(3);
+        for(var k=0;k<scoreArray.length;k++){
+            scoreArray[k] = new Array();
+        }
+        var j = 0;
+        for(i in scoreObject){
+            scoreArray[j][0] = i;
+            scoreArray[j][1] = scoreObject[i]["Math"];
+            scoreArray[j][2] = scoreObject[i]["English"];
+            scoreArray[j][3] = scoreObject[i]["Music"];
+            j++;
+        }
+        console.log(scoreArray);
+    
+    </script>
+</body>
+</html>

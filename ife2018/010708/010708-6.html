@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>010708-6</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        .header {
+            width: 100%;
+            height: 80px;
+            background-color: #2f271d;
+        }
+        .header-main {
+            max-width: 960px;
+            height: 80px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .logo {
+            font-size: 40px;
+            margin-left: 20px;
+            line-height: 80px;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            display: inline;
+        }
+        .menu {
+            display: inline;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .menu > ul {
+            list-style: none;
+            display: inline;
+            margin:0;
+            padding:0;
+        }
+        .menu a {
+            font-size: 15px;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .menu li {
+            display: inline;
+        }
+        .banner {
+            width: 100%;
+            height: 240px;
+            background-color: #7fb80e;
+        }
+        .banner-tab-position {
+            margin: 0 auto;
+            max-width: 960px;
+            height: 240px;
+            position: relative;
+        }
+        .banner-tab-box {
+            display: -webkit-flex; /* Safari */
+            display: flex;
+            width: 100px;
+            position: absolute;
+            right: 5px;
+            bottom: 5px;
+            height: 40px;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+        .banner-tab {
+            width: 20px;
+            height: 20px;
+            background-color: #b9db76;
+            border: 1px solid #000;
+            margin: 4px;
+            font-size: 15px;
+            color: #000;
+            font-family: Arial, Helvetica, sans-serif; 
+            text-align: center;
+            line-height: 20px;  
+        }
+        #banner-tab2 {
+            height: 35px;
+            line-height: 3.2;
+            background-color: #d4f19a;
+
+        }
+        .nav {
+            width: 100%;
+            height: 60px;
+            background-color: #fff;
+            border-bottom: 1px solid #bbb;
+            
+        }
+        .nav-position {
+            max-width: 960px;
+            height: 60px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .nav-box {
+            display: -webkit-flex;
+            display: flex;
+            width: 306px;
+            position: absolute;
+            bottom: -1px;
+            
+        }
+        .nav-tab {
+            width: 100px;
+            height: 40px;
+            border: 1px solid #bbb;
+            color: #000;
+            background-color: #ddd;
+            font-family: Arial, Helvetica, sans-serif; 
+            text-align: center;
+            line-height: 40px;
+            border-top-left-radius: 1em;
+            border-top-right-radius: 1em; 
+        }
+        #nav-tab1 {
+            border-bottom: 1px solid #fff;
+            background-color: #fff;
+
+        }
+        .main {
+            width: 100%;
+            /*height: 580px;*/
+            background-color: #fff;
+            border-top: 1 solid #999;
+        }
+        .main-box {
+            max-width: 960px;
+            /*height: 580px;*/
+            margin: 0 auto;
+            
+        }
+        .main-content {
+            border: 1px solid #bbb;
+            padding: 80px;
+            flex-grow: 1;
+        }
+        .margin-r {
+            margin-right: 10px;
+        }
+        .margin-bottom {
+            margin-bottom: 10px;
+        }
+        .content1 {
+            /*width: 32%;*/
+            /*height: 120px;*/
+            margin-top: 10px;
+            
+        }
+        .content1,
+        .content2,
+        .content3 {
+            width: 100%;
+            display: -webkit-flex;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-around;
+            text-align: center;
+        
+        }
+        .content2 {
+            /*width: 24%;*/
+            /*height: 170px;*/
+            margin: 10px 0;
+        }
+        .content3 {
+            /*width: 32%;*/
+            /*height: 150px;*/
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            width: 100%;
+            height: 60px;
+            background-color: #a1a3a6;
+        }
+        .siteinfo {
+            font-family: Arial, Helvetica, sans-serif; 
+            text-align: center;
+            line-height: 20px;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-main">
+            <div class="logo">Logo</div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Github</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="banner-tab-position">
+            <div class="banner-tab-box">
+                <div class="banner-tab" id="banner-tab1">1</div>
+                <div class="banner-tab" id="banner-tab2">2</div>
+                <div class="banner-tab" id="banner-tab3">3</div>
+                <div class="banner-tab" id="banner-tab4">4</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="nav-position">
+            <div class="nav-box">
+                <div class="nav-tab" id="nav-tab1">HOME</div>
+                <div class="nav-tab" id="nav-tab2">PROFILE</div>
+                <div class="nav-tab" id="nav-tab3">ABOUT</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="main-box">
+            <div class="content1">
+                <div class="main-content margin-r">This is content 1</div>
+                <div class="main-content margin-r">MaybeContent2</div>
+                <div class="main-content">Content 3</div>
+            </div>
+            <div class="content2">
+                <div class="main-content">Content 4</div>
+                <div class="main-content">Content 5</div>
+                <div class="main-content">Content 6</div>
+                <div class="main-content">Content 7</div>
+            </div>
+            <div class="content3">
+                <div class="main-content margin-r">Content 8</div>
+                <div class="main-content margin-r">Content 9</div>
+                <div class="main-content ">Content 10</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="siteinfo">&copy;2018 ife.baidu.com</div>
+    </div>
+
+</body>
+</html>

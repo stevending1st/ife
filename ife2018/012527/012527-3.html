@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="time2"></div>
+    <script>
+    var pTime2 = document.getElementById("time2");
+    function nowDay(){
+        var d =new Date();
+        var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        return weekday[d.getDay()];
+    }
+    function oneTotwo(word){
+        if(word<10){
+            return "0"+word.toString();
+        }else {
+            return word.toString();
+        }
+    }
+    function nowHour(){
+        var d = new Date();
+        var AMorPM;
+        var nowTimeHour;
+        if (d.getHours()<13){
+            nowTimeHour = d.getHours();
+            AMorPM = "AM";
+        }else {
+            nowTimeHour = d.getHours() - 12;
+            AMorPM = "PM";
+        }
+        return oneTotwo(nowTimeHour) + ":" + oneTotwo(d.getMinutes()) + ":" + oneTotwo(d.getSeconds()) + " " + AMorPM;
+    }
+    function nowTime(){
+        var d = new Date();
+        pTime2.innerHTML = d.getFullYear() + "-" + oneTotwo(d.getMonth()+1) + "-" + oneTotwo(d.getDate()) + " " + nowDay() + " " + nowHour();
+    }
+    setInterval("nowTime()",1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>简历</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        h1 {
+            font-size: 40px;
+            font-family: "Microsoft YaHei", sans-serif;
+            font-weight: 700;
+        }
+        h2 {
+            font-size: 30px;
+            font-family: "Microsoft YaHei", sans-serif;
+            font-weight: 700;
+        }
+        h3 {
+            font-size: 25px;
+            font-family: "Microsoft YaHei", sans-serif;
+            font-weight: 700;
+        }
+        p {
+            font-size: 25px;
+            font-family: "Microsoft YaHei", sans-serif;
+            margin-right: 50px;
+        }
+        .to-one-line {
+            float: left;
+        }
+        .clean-float {
+            clear: left;
+        }
+        .line-margin-top {
+            margin-top: 20px;
+        }
+        .margin-left {
+            margin-left: 20px;
+        }
+        .sidebar {
+            float: left;
+            width: 200px;
+            height: 1000px;
+            background-color: #65a5fa; 
+        }
+        .main {
+            float: left;
+            margin: 40px 0 0 40px;
+        }
+        .sidebar .line-margin-top{
+            text-align: center;
+            margin-top: 80px;
+            color: #fff;
+        }
+
+        #hello-box,
+        #hobby-box {
+            font-size: 25px;
+            font-family: "Microsoft YaHei", sans-serif;
+            text-align: left;
+            margin-top: 20px;
+            color: #fff;
+        }
+        #hello,
+        #hobby {
+            max-width: 200px;
+            background-color: #ed1941;
+            color: #0ff;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="margin-left sidebar">
+        <h1 class="line-margin-top">简历</h1>
+        <button id="hello">和你打招呼</button>
+        <div id="hello-box"></div>
+        <button id="hobby">点开看看我的特殊爱好</button>
+        <div id="hobby-box"></div>
+    </div>
+
+    <div class="margin-left main">
+        <h2 class="line-margin-top main-left">基本信息</h2>
+        <div class="line-margin-top main-right">
+            <h3 class="to-one-line">姓名</h3>
+            <p class="to-one-line margin-left">张三</p>
+            <h3 class="to-one-line">性别</h3>
+            <p class="to-one-line margin-left">男</p>
+            <h3 class="to-one-line">应聘职位</h3>
+            <p class="to-one-line margin-left">Web前端工程师</p>
+        </div>
+    
+        <div class="clean-float"></div><!--清除浮动，使margin有效-->
+
+        <h2 class="line-margin-top main-left">联系方式</h2>
+        <div class="line-margin-top main-right">  
+            <h3 class="to-one-line">手机</h3>
+            <p class="to-one-line margin-left">12345678901</p>
+            <h3 class="to-one-line">E-mail</h3>
+            <p class="to-one-line margin-left"><a href="#">joinefe@baidu.com</a></p>
+            <h3 class="to-one-line">个人主页</h3>
+            <p class="to-one-line margin-left"><a href="#">Github</a></p>
+        </div>
+
+        <div class="clean-float"></div><!--清除浮动，使margin有效-->
+
+        <h2 class="line-margin-top main-left">能力描述</h2>
+        <div class="main-right">
+            <h3 class="line-margin-top">技术能力</h3>
+            <p>熟练掌握HTML、CSS、JavaScript</p>
+            <div class="clean-float"></div><!--清除浮动-->
+            <h3 class="line-margin-top">综合能力</h3>
+            <p>良好的沟通、主动积极、努力勤奋</p>
+        </div>
+
+        <div class="clean-float"></div><!--清除浮动，使margin有效-->
+
+        <h2 class="line-margin-top main-left">教育经历</h2>
+        <div class="main-right">
+            <h3 class="line-margin-top">本科</h3>
+            <p>百度前端学院小薇学院</p>
+            <div class="clean-float"></div><!--清除浮动-->
+            <h3 class="line-margin-top">研究生</h3>
+            <p>百度前端学院大斌学院</p>  
+        </div>
+        
+        <div class="clean-float "></div><!--清除浮动，使margin有效-->
+
+        <h2 class="line-margin-top main-left main-left-bottom">项目经验</h2>
+        <div class="main-right">
+            <h3 class="line-margin-top">小度小度</h3>
+            <p>作为前端工程师角色参与了项目ABC组件的开发</p>
+            <div class="clean-float"></div><!--清除浮动-->
+            <h3 class="line-margin-top">SAN Doc</h3>
+            <p>作为文档工程师参与了SAN Doc的编写</p>
+        </div>
+    </div>
+    <script>
+        document.getElementById("hello").onclick = function () {
+            document.getElementById("hello-box").innerHTML = "你好！欢迎来到我的简历"
+        }
+        document.getElementById("hobby").onclick = function () {
+            document.getElementById("hobby-box").innerHTML = "你猜，使劲猜，我就不告诉你！"
+        }
+    </script>
+</body>
+</html>

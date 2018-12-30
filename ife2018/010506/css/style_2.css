@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+}
+h1 {
+    font-size: 40px;
+    font-family: "Microsoft YaHei", sans-serif;
+    font-weight: 700;
+}
+h2 {
+    font-size: 30px;
+    font-family: "Microsoft YaHei", sans-serif;
+    font-weight: 700;
+}
+h3 {
+    font-size: 25px;
+    font-family: "Microsoft YaHei", sans-serif;
+    font-weight: 700;
+}
+p {
+    font-size: 25px;
+    font-family: "Microsoft YaHei", sans-serif;
+    margin-right: 50px;
+}
+.to-one-line {
+    float: left;
+}
+.clean-float {
+    clear: left;
+}
+.line-margin-top {
+    margin-top: 20px;
+}
+.margin-left {
+    margin-left: 20px;
+}
+.sidebar {
+    float: left;
+    width: 200px;
+    height: 1000px;
+    background-color: #65a5fa; 
+}
+.main {
+    float: left;
+    margin: 40px 0 0 40px;
+}
+.sidebar .line-margin-top{
+    text-align: center;
+    margin-top: 80px;
+    color: #fff;
+}

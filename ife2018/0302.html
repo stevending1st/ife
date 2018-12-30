@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo0302</title>
+    <style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        border-style:solid;
+        border:solid 2px #efefef;
+        background-color: #f9f7f8;
+        width: 56px;
+        height: 64px;
+        float:left;
+    }
+    .font1{
+        font-size: 18px;
+        font-family: "FZYOUH_508R";
+        display: table;
+        margin: 0 auto;
+        line-height: 64px;
+    }
+    #box0{
+        margin: 27px 0 0 18px; 
+    }
+    #box1{
+        margin: 27px 0 0 50px;
+        transform: skewX(30deg);
+        -ms-transform: skewX(30deg); /* IE 9 */
+        -moz-transform: skewX(30deg); /* Firefox */
+        -webkit-transform: skewX(30deg); /* Safari and Chrome */
+        -o-transform: skewX(30deg); /* Opera */
+    }
+    #box2{
+        margin: 27px 0 0 29px;
+        transform: scaleX(0.5);
+        -ms-transform: scaleX(0.5);	/* IE 9 */
+        -webkit-transform: scaleX(0.5);	/* Safari 和 Chrome */
+        -o-transform: scaleX(0.5);	/* Opera */
+        -moz-transform: scaleX(0.5);	/* Firefox */
+    }
+    #box3{
+        margin: 27px 0 0 27px;
+        transform: rotate(45deg);
+        -ms-transform: rotate(45deg);		/* IE 9 */
+        -webkit-transform: rotate(45deg);	/* Safari and Chrome */
+        -o-transform: rotate(45deg);		/* Opera */
+        -moz-transform: rotate(45deg);		/* Firefox */
+    }
+    #box4{
+        margin: 27px 0 0 46px;
+        transform: translate(10px,20px);
+        -ms-transform: translate(10px,20px);		/* IE 9 */
+        -webkit-transform: translate(10px,20px);	/* Safari and Chrome */
+        -o-transform: translate(10px,20px);		/* Opera */
+        -moz-transform: translate(10px,20px);		/* Firefox */
+    }
+    #box5{
+        margin: 27px 0 0 53px;
+        transform: translate(10px,20px) scaleX(0.5) rotate(45deg) translate(10px,20px) skewX(30deg);
+        -ms-transform: translate(10px,20px) scaleX(0.5) rotate(45deg) translate(10px,20px) skewX(30deg); /* IE 9 */
+        -moz-transform: translate(10px,20px) scaleX(0.5) rotate(45deg) translate(10px,20px) skewX(30deg); /* Firefox */
+        -webkit-transform: translate(10px,20px) scaleX(0.5) rotate(45deg) translate(10px,20px) skewX(30deg); /* Safari and Chrome */
+        -o-transform: translate(10px,20px) scaleX(0.5) rotate(45deg) translate(10px,20px) skewX(30deg); /* Opera */
+    }
+    </style>
+</head>
+<body>
+    <div id="bigbox">
+        <div class="box" id="box0"><div class="font1">box0</div></div>
+        <div class="box" id="box1"><div class="font1">box1</div></div>
+        <div class="box" id="box2"><div class="font1">box2</div></div>
+        <div class="box" id="box3"><div class="font1">box3</div></div>
+        <div class="box" id="box4"><div class="font1">box4</div></div>
+        <div class="box" id="box5"><div class="font1">box5</div></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>demo0301</title>
+    <style >
+        #box1{
+            display: table;
+            margin: 0 auto;
+        }
+        #line1{
+            display: table;
+            margin: 0 auto;
+            height: 5px;
+            width: 0;
+            background:blue;
+            transition: width 1s;
+            -webkit-transition: width 1s ease-in;
+        }
+        #font1{
+            font-size: 20px;
+            margin: 50px 0 0 0;
+            color: black;
+            transition: color 1s ease-in;
+        }
+        button{
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+        <div id="font1">Hello World!</div>
+        <div id="line1"></div>
+        <button onclick="myFunction()">Change The Style</button>
+    </div>
+    <script>
+        var i=1;
+        function myFunction(){
+            if(i==1){
+                document.getElementById("line1").style.width = "123px";
+                document.getElementById("font1").style.color = "blue";
+                i=0;
+            }else{
+                document.getElementById("line1").style.width = "0px";
+                document.getElementById("font1").style.color = "black";
+                i=1;
+            }
+        }
+    </script>
+</body>
+</html>

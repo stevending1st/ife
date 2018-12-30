@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>010708-1</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        .words {
+            font-size: 40px;
+        }
+        .left {
+            background-color: #ffc20e;
+            width: 30%;
+            height: 100px;
+        }
+        .right {
+            background-color: #6abee9;
+            width: 70%;
+            height: 100px;
+        }
+        .box1-left,
+        .box1-right {
+            float: left;
+        }
+        .box2 {
+            position: relative;
+        }
+        .box2-right {
+            position: absolute;
+            left: 30%;
+            top: 0;
+        }
+        .box3 {
+            display: -webkit-flex;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="words">Float 布局</div>
+    <div>
+        <div class="left box1-left">左栏宽30%</div>
+        <div class="right box1-right">右栏宽70%</div>
+    </div>
+
+    <div class="words">Position 布局</div>
+    <div class="box2">
+        <div class="left ">左栏宽30%</div>
+        <div class="right box2-right">右栏宽70%</div>
+    </div>
+    
+    <div class="words">Position 布局--relative</div>
+    <div class="box3">
+        <div class="left box3-left">左栏宽30%</div>
+        <div class="right box3-right">右栏宽70%</div>
+    </div>
+</body>
+</html>
